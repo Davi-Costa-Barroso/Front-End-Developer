@@ -1,2 +1,4 @@
 # Front-End-Developer
-Cursos FrontEnd Developer da Digital Innovation One (DIO)
+- Formação HTML Web Developer;
+- Formação CSS Web Developer;
+- Formação TypeScript Fullstack Developer;
