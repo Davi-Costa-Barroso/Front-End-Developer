@@ -26,6 +26,7 @@ export class UserService{
         console.log("DB atualizado!", this.db)
     }
     getAllUser =()=>{
+        console.log("Usuários listados")
         return this.db
     }
 }

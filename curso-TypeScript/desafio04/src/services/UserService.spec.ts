@@ -10,4 +10,10 @@ describe('UserService', ()=>{
         userService.createUser('davi', 'davi@test.com')
         expect(mockConsole).toHaveBeenCalledWith('DB atualizado!', mockDB)
     })
+
+    it('Deve listar os usuários cadastrados', ()=>{
+        const mockConsole = jest.spyOn(global.console, 'log')
+        userService.getAllUser()
+        expect(mockConsole).toHaveBeenCalledWith('Usuários listados')
+    })
 })
