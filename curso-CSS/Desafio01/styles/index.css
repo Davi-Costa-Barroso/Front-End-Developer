@@ -3,7 +3,11 @@
     margin: 0px;
 }
 .banner{
-    background-image: url('../images/fundoHeader.png'), linear-gradient(rgba(0, 0, 0, 0.8) , rgba(49, 168, 221, 0.8) , rgba(0, 0, 0, 0.8));
+    background-image: url('../images/fundoHeader.png'), 
+    linear-gradient(
+    rgba(0, 0, 0, 1),  
+    rgb(9, 66, 90), 
+    rgba(0, 0, 0, 0.9));
     Border: 0px, 0px, 1px, 0px;
     border-color: #33A8DB;
     text-align: center;
@@ -20,7 +24,6 @@
     font-size: 40px;
     font-weight: 900;
     line-height: 46.96px;
-    text-shadow: 2px 2px 4px #000000;
     
 }
 .banner-content p{
@@ -40,28 +43,81 @@
     color: #33A8DB;
 }
 
-.logo{
-
-}
-
 #course-content{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 80px 25% 80px 25%; /* up right down left */
+}
+h2{
+    color: #33A8DB;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
-#modules-list{
-
+.modules-list{
+    margin: 15px;
+}
+.module{
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #252525;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+.module span{
+    color:#33A8DB;
+}
+#transform-world {
+    background-image: url('../images/professional-projector.png');
+    background-attachment: fixed;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom:5%
+}
+#transform-world p{
+    width: 220px;
+    font-size: 40px;
+    line-height: 46.96px;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgba(51, 168, 219, 1);
+    color: white;
+    text-transform: lowercase;
+    margin-bottom: 5px;
+   
 }
 
-#transform-world{
-
+#professional-challenges{
+    background: black;
+    color: white;
+    padding: 80px 25% 80px 25%;
+    text-align: center;
 }
 
-#professional-challenge{
-
+button{
+    font-weight: 900;
+}
+button:hover{
+    border: 4px solid;
+}
+footer{
+    color: #FFFFFF;
+    background: linear-gradient(
+    rgba(0, 0, 0, 1),  
+    rgb(9, 66, 90), 
+    rgba(0, 0, 0, 0.9));
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
 }
 
-.dio-logo{
-
+a{
+    text-decoration: none;
+    color: #33A8DB;
 }
