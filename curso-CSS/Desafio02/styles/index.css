@@ -18,6 +18,7 @@ ul{
 li{
     display: inline-flex;
     margin-right: 24px;
+    cursor: pointer;
 }
 .pesquisar{
     display: flex;
@@ -35,12 +36,14 @@ input{
 .search{
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .avatar{
     height: 34px;
     width: 34px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .video{
     width: 100%;  /* width: 952px; */
@@ -89,7 +92,6 @@ main{
 .canal{
     display: flex;
     align-items: center;
-   
 }
 .canal-details{
     margin-left: 10px;
@@ -100,7 +102,16 @@ button{
     border: none;
     padding: 10px 30px 10px 30px;
     border-radius: 2px;
+    cursor: pointer;
 }
 button:hover{
     background-color: rgb(148, 3, 3);
+}
+.thumbs{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.margin-thumbs{
+    margin-left: 5px;
 }
