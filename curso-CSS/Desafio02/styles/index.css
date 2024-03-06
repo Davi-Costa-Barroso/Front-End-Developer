@@ -2,3 +2,105 @@
     padding: 0px;
     margin: 0px;
 }
+
+nav{
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    Padding: 0px 24px 0px 24px;
+    /* flex-wrap:wrap; */
+}
+ul{
+    display: inline-flex;
+    align-items: center;
+}
+li{
+    display: inline-flex;
+    margin-right: 24px;
+}
+.pesquisar{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+}
+
+input{
+    height:40px;
+    width: 348px;
+    border: none;
+    border-right: 1px solid;
+}
+
+.search{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.avatar{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+.video{
+    width: 100%;  /* width: 952px; */
+    height: 20%; /* height: 537px; */
+}
+main{
+    display: flex;
+    margin-left: 75px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.video-canal h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.video-slides{
+    margin-left: 20px;
+}
+.descricao-canal{
+    width: 60%;
+}
+.descricao{
+    margin-top: 20px;
+}
+.titulo-video{
+    margin-top: 20px;
+}
+.video-principal h2{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+.video-principal p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: rgba(81, 81, 81, 1);
+}
+.interacoes-canal{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+}
+.canal{
+    display: flex;
+    align-items: center;
+   
+}
+.canal-details{
+    margin-left: 10px;
+}
+button{
+    background-color: rgba(204, 0, 0, 1);
+    color: white;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 2px;
+}
+button:hover{
+    background-color: rgb(148, 3, 3);
+}
