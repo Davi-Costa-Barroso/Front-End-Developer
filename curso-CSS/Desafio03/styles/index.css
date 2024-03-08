@@ -4,11 +4,10 @@
 }
 nav{
     display: flex;
-    height: 56px;
     justify-content: space-between;
     align-items: center;
-    Padding: 0px 24px 0px 24px;
-    /* flex-wrap:wrap; */
+    Padding: 10px 24px 0px 24px;
+    flex-wrap:wrap;
 }
 nav ul{
     display: inline-flex;
