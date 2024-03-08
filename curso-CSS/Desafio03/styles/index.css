@@ -1,99 +1,115 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-nav{
+
+body {
+    display: grid;
+    grid-template-columns: 240px auto;
+    grid-template-areas:
+        "header header"
+        "navbar main-content";
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     Padding: 10px 24px 0px 24px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    grid-area: header;
 }
-nav ul{
-    display: inline-flex;
+
+header ul {
+    display: flex;
     align-items: center;
 }
-li{
+
+li {
     display: inline-flex;
     margin-right: 24px;
     cursor: pointer;
     list-style: none;
 }
-.pesquisar{
+
+.pesquisar {
     display: flex;
     align-items: center;
     border: 1px solid gray;
 }
 
-nav input{
-    height:40px;
+header input {
+    height: 40px;
     width: 348px;
     border: none;
     border-right: 1px solid;
+    font-size: 16px;
 }
 
-.search{
+.search {
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
 }
 
-.avatar{
+.avatar {
     height: 34px;
     width: 34px;
     border-radius: 50%;
     cursor: pointer;
 }
-/* main  */
-.slidebar{
+
+nav {
     padding: 24px;
     display: block;
+    grid-area: navbar;
 }
-.slidebar li{
+
+nav li {
     padding-bottom: 16px;
     align-items: center;
 }
-.icon{
+
+.icon {
     padding-right: 24px;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 240px auto;
-}
-.conteudo{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+main {
     margin-top: 24px;
-    
-}
-.card{
-   margin-bottom: 15px;
+    display: flex;
+    grid-area: main-content;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.video{
+.card {
+    margin-bottom: 15px;
+}
+
+.video {
     cursor: pointer;
     margin: 10px;
 }
 
-.details{
+.details {
     margin: 0px 10px 0px 10px;
     display: flex;
     align-items: flex-start;
 }
 
-.describe{
-   padding: 5px;
-   width: 50%;
+.describe {
+    padding: 5px;
+    width: 50%;
 }
 
-.title{
+.title {
     font-size: 14px;
     font-weight: 600;
     line-height: 16.41px;
     padding-bottom: 10px;
 }
-.description{
+
+.description {
     color: rgba(81, 81, 81, 1);
     font-size: 12px;
     font-weight: 400;
