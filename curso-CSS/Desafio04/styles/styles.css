@@ -1,0 +1,9 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 100px repeat(3, 300px);
+}
