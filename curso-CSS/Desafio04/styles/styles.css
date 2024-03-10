@@ -11,12 +11,15 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 459px;
-    padding-left: 22%;
-    padding-right: 22%;
     color: white;
     gap: 16px;
 }
-
+.header-content{
+    padding: 0px 24% 0px 24%;
+}
+img{
+    max-width: 100%;
+}
 h1 {
     line-height: 56px;
     font-size: 56px;
@@ -51,6 +54,7 @@ button:hover {
 .buttonBrowser {
     background-color: rgba(35, 39, 42, 1);
     color: white;
+    margin: 10px;
 }
 
 main {
@@ -79,6 +83,7 @@ main {
 .content-4 {
     background-color: rgba(246, 246, 246, 1);
 }
+
 .content-4 div{
     padding-left: 20%;
     padding-right: 20%;
@@ -96,4 +101,22 @@ footer {
     align-items: center;
     display: flex;
     height: 134px;
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        text-align: left;
+    }
+    .header-content{
+        padding: 0px 24px 0px 24px;
+    }
+
+    button {
+        width: 90%;
+    }
+    .content-4 div{
+        padding: 0px 24px 0px 24px;
+        text-align: left;
+    }
 }
