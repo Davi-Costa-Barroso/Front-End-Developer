@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(45deg,
+            #9b34ef 0%,
+            #490cb0 20%,
+            transparent 100%);
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(90deg,
+            #5516ba,
+            rgba(255, 0, 229, 0.5) 80%);
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway';
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr 1fr 1fr 50px;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+}
+
+h1 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 900;
+}
+
+h2 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+header {
+    background-color: var(--primary-color);
+    grid-area: header;
+}
+
+.hbo-logo {
+    width: 160px;
+    margin-left: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--nav-bg-color);
+    position: fixed;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav button {
+    padding: 6px 25px 6px 25px;
+    border-radius: 25px;
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    transition: background 1s, color 1s;
+    font-size: 14px;
+
+}
+
+.links {
+    margin-right: 40px;
+}
+
+nav button:hover {
+    cursor: pointer;
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+}
+
+main {
+    background: var(--primary-color);
+    text-align: center;
+}
+
+.content-1 {
+    background: var(--card-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    grid-area: content;
+    text-align: center;
+}
+
+.content-1 div,
+.assinatura>* {
+    margin-bottom: 30px;
+}
+p{
+    color: white;
+    font-family: 'Quicksand';
+}
+.font-16{
+    font-size: 16px;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.preco {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.assinatura button{
+    color: white;
+    padding: 6px 25px 6px 25px;
+    border-radius: 25px;
+    background: var(--btn-bg-color-gradient);
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    font-size: 20px;
+    transition: background 1s, border 1s;
+}
+.assinatura button:hover{
+    background: transparent;
+    border: 2px solid #ff00e5;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    background: var(--divider-bg-color);
+    margin: 30px auto;
+    width: 50%;
+}
+
+.patrocinadores {
+    display: flex;
+    align-items: center;
+
+}
+
+.patrocinadores img {
+    margin: 0px 10px 5px 10px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
