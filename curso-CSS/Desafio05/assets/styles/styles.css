@@ -36,10 +36,12 @@ body {
     font-family: 'Raleway';
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: 50px auto auto auto 50px;
     grid-template-areas:
         "header"
-        "content"
+        "content-1"
+        "content-2"
+        "content-3"
         "footer";
 }
 
@@ -96,7 +98,6 @@ nav button {
     border: none;
     transition: background 1s, color 1s;
     font-size: 14px;
-
 }
 
 .links {
@@ -120,7 +121,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
-    grid-area: content;
+    grid-area: content-1;
     text-align: center;
 }
 
@@ -128,16 +129,22 @@ main {
 .assinatura>* {
     margin-bottom: 30px;
 }
-p{
+
+p {
     color: white;
     font-family: 'Quicksand';
 }
-.font-16{
+
+.font-16 {
     font-size: 16px;
 }
 
-.font-20{
+.font-20 {
     font-size: 20px;
+}
+
+.cards-titulo {
+    font-size: 30px;
 }
 
 .preco {
@@ -145,7 +152,8 @@ p{
     align-items: end;
     justify-content: center;
 }
-.assinatura button{
+
+.assinatura-btn {
     color: white;
     padding: 6px 25px 6px 25px;
     border-radius: 25px;
@@ -155,9 +163,10 @@ p{
     text-transform: uppercase;
     border: none;
     font-size: 20px;
-    transition: background 1s, border 1s;
+    transition: background 1s;
 }
-.assinatura button:hover{
+
+.assinatura-btn:hover {
     background: transparent;
     border: 2px solid #ff00e5;
     cursor: pointer;
@@ -177,11 +186,85 @@ hr {
 
 }
 
+h3 {
+    color: white;
+}
+
 .patrocinadores img {
     margin: 0px 10px 5px 10px;
 }
 
+.content-2 {
+    grid-area: content-2;
+    padding: 0px 5% 0px 5%;
+}
+
+.cards {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.font-pink {
+    color: var(--secondary-color);
+}
+
+.card {
+    padding: 50px;
+    max-width: 400px;
+    border-radius: 10px;
+    background: var(--card-bg-color);
+}
+
+.card-cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content li {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.content-3 {
+    grid-area: content-3;
+}
+.catalago{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-catalago {
+    width: 350px;
+    margin: 30px;
+}
+
 footer {
+    background: var(--primary-color);
     grid-area: footer;
     text-align: center;
+    color: white;
+    padding: 50px;
+    height: 100%;
+}
+.redes-sociais{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociais img{
+    margin-left: 20px;
+    margin-right: 20px;
 }
