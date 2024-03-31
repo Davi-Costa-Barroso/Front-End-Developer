@@ -1,50 +1,51 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-section{
-    display: grid;
+body {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "imagem formulario";
-    text-align: center;
+    grid-template-rows: 1fr 100px;
+    grid-template-areas:
+        "content-1 content-2"
+        "rodape rodape";
+}
+main{
+    display: flex;
     padding-left: 10%;
     padding-right: 10%;
 }
-
-.imagem-celular{
-    grid-area: imagem;
+.content-1 {
+    grid-area: content-1;
+    width: 100%;
 }
-.formulario{
-    grid-area: formulario;
+
+.content-2 {
+    grid-area: content-2;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
-    padding-right: 50px;
 }
-
-img{
+.card{
+    border: 1px solid gray;
+}
+img {
     max-width: 100%;
 }
-input{
-    margin-bottom: 5px;
-    width: 100%;
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: gray;
+}
+
+li{
     padding: 10px;
 }
-button{
-    border: 1px solid gray;
-    width: 100%;
-    padding: 5px;
-    border-radius: 5px;
-    color: aliceblue;
-    background-color: #4cb5f9;
-}
-h1{
+
+footer {
+    grid-area: rodape;    
     padding: 10px;
-    font-size: 52px;
-}
-footer{
-    padding: 10px;
-    text-align: center;
 }
